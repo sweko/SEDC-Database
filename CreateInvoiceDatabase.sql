@@ -31,7 +31,7 @@ GO
 
 
 CREATE TABLE [dbo].[Products](
-	[ID] [int] NOT NULL,
+	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[Name] [nvarchar](50) NOT NULL,
 	[Description] [nvarchar](max) NULL,
 	[Price] [money] NOT NULL,
@@ -49,7 +49,7 @@ REFERENCES [dbo].[Categories] ([ID])
 GO
 
 CREATE TABLE [dbo].[InvoiceDetails](
-	[ID] [int] NOT NULL IDENTITY(1,1),
+	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[InvoiceID] [int] NOT NULL,
 	[ProductID] [int] NOT NULL,
 	[Quantity] [int] NOT NULL,
