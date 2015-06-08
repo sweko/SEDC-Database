@@ -5,6 +5,14 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BareMetal", "BareMetal\BareMetal.csproj", "{8F845EB6-9264-49EC-B77C-BD80F7DFE3F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDbFirst", "EntityDbFirst\EntityDbFirst.csproj", "{9A910F8C-FEEB-4B89-8BEE-FA36781F76A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise", "Exercise", "{89524F9A-4B39-498B-92A3-FFA29139AF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SedcLister", "SedcLister\SedcLister.csproj", "{97CDDC25-3829-4037-98D8-C1A7141859F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SedcStudents", "SedcStudents\SedcStudents.csproj", "{DC9C93ED-6882-4218-9CA0-37255A784B96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +23,24 @@ Global
 		{8F845EB6-9264-49EC-B77C-BD80F7DFE3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F845EB6-9264-49EC-B77C-BD80F7DFE3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F845EB6-9264-49EC-B77C-BD80F7DFE3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A910F8C-FEEB-4B89-8BEE-FA36781F76A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A910F8C-FEEB-4B89-8BEE-FA36781F76A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A910F8C-FEEB-4B89-8BEE-FA36781F76A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A910F8C-FEEB-4B89-8BEE-FA36781F76A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CDDC25-3829-4037-98D8-C1A7141859F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CDDC25-3829-4037-98D8-C1A7141859F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CDDC25-3829-4037-98D8-C1A7141859F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CDDC25-3829-4037-98D8-C1A7141859F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9C93ED-6882-4218-9CA0-37255A784B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9C93ED-6882-4218-9CA0-37255A784B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9C93ED-6882-4218-9CA0-37255A784B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9C93ED-6882-4218-9CA0-37255A784B96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97CDDC25-3829-4037-98D8-C1A7141859F8} = {89524F9A-4B39-498B-92A3-FFA29139AF3A}
+		{DC9C93ED-6882-4218-9CA0-37255A784B96} = {89524F9A-4B39-498B-92A3-FFA29139AF3A}
 	EndGlobalSection
 EndGlobal
