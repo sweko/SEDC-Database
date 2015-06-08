@@ -87,7 +87,19 @@ where FirstName like '%' + @search + '%'
 
         private void InsertStudent(Student student)
         {
-            
+            var cs = ConfigurationManager.ConnectionStrings["TheBase"].ConnectionString;
+            using (SqlConnection cnn = new SqlConnection(cs))
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand(@"insert into Students (FirstName, LastName, PhoneNumber, Email, DateOfBirth)
+values (@firstName,@lastName,@phone,@email,@dob)", cnn);
+                cmd.Parameters.AddWithValue("@firstName", student.FirstName);
+                cmd.Parameters.AddWithValue("@lastName", student.LastName);
+                cmd.Parameters.AddWithValue("@phone", student.Phone);
+                cmd.Parameters.AddWithValue("@email", student.Email);
+                cmd.Parameters.AddWithValue("@dob", student.DateOfBirth);
+                cmd.ExecuteNonQuery();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
